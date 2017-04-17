@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/css-filters.css">
+	</head>
+
+	<body>
+		<svg class="duotone-filters" xmlns="http://www.w3.org/2000/svg">
+			 <filter id="duotone_lightblue">
+		        <feColorMatrix type="matrix" result="gray"
+		            values="1 0 0 0 0 
+                    1 0 0 0 0
+                    1 0 0 0 0
+                    0 0 0 1 0" >
+		        </feColorMatrix>
+
+		        <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+		            <feFuncR type="table" tableValues="0.1960784314 0.5764705882"></feFuncR>
+		            <feFuncG type="table" tableValues="0.03921568627 0.8431372549"></feFuncG>
+		            <feFuncB type="table" tableValues="0.2549019608 0.9803921569"></feFuncB>
+		            <feFuncA type="table" tableValues="0 1"></feFuncA>
+		        </feComponentTransfer>
+		    </filter> 
+
+		</svg>
+		
+		<div class="picture">
+			<img src="img/flower.jpg">
+		</div>
+
+	</body>
+
+
+</html>
